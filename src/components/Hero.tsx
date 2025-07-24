@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { ChevronDown, Github, Linkedin, Mail, Phone } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, Youtube, Mail, Phone } from 'lucide-react';
 import profilePhoto from '@/assets/profile-photo.jpg';
 
 const Hero = () => {
@@ -40,9 +40,9 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-secondary/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
       </div>
 
       <div className="container mx-auto px-6 z-10">
@@ -120,13 +120,21 @@ const Hero = () => {
               >
                 <Github className="w-5 h-5" />
               </Button>
+              <Button 
+                variant="glass" 
+                size="icon" 
+                className="hover-lift"
+                onClick={() => window.open('https://youtube.com/@gurnoorsingh', '_blank')}
+              >
+                <Youtube className="w-5 h-5" />
+              </Button>
             </div>
           </div>
 
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-primary rounded-full blur-2xl opacity-30 animate-pulse" />
+              <div className="absolute inset-0 bg-gradient-primary rounded-full blur-2xl opacity-15 animate-pulse" />
               <div className="relative w-80 h-80 rounded-full overflow-hidden glass p-2 hover-lift">
                 <img 
                   src={profilePhoto} 

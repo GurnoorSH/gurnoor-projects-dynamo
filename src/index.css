@@ -12,17 +12,17 @@
     --background-tertiary: 225 15% 12%;
     --foreground: 210 40% 98%;
 
-    /* Neon Accent Colors */
-    --primary: 195 100% 50%;        /* Neon Blue #00D4FF */
-    --primary-glow: 195 100% 65%;   /* Lighter Blue */
+    /* Professional Accent Colors */
+    --primary: 200 85% 45%;         /* Professional Blue #2563EB */
+    --primary-glow: 200 85% 60%;    /* Lighter Blue */
     --primary-foreground: 225 25% 5%;
 
-    --secondary: 270 75% 65%;       /* Neon Purple #8B5CF6 */
-    --secondary-glow: 270 75% 80%;  /* Lighter Purple */
+    --secondary: 260 60% 55%;       /* Muted Purple/Indigo #6366F1 */
+    --secondary-glow: 260 60% 70%;  /* Lighter Purple */
     --secondary-foreground: 225 25% 5%;
 
-    --accent: 320 100% 60%;         /* Neon Pink #FF1CF7 */
-    --accent-glow: 320 100% 75%;    /* Lighter Pink */
+    --accent: 35 85% 55%;           /* Professional Orange/Gold #F59E0B */
+    --accent-glow: 35 85% 70%;      /* Lighter Orange */
     --accent-foreground: 225 25% 5%;
 
     /* UI Elements */
@@ -49,10 +49,10 @@
     --gradient-text: linear-gradient(90deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 50%, hsl(var(--accent)) 100%);
 
     /* Shadows and Glows */
-    --shadow-glow: 0 0 30px hsl(var(--primary) / 0.3);
-    --shadow-primary: 0 10px 40px hsl(var(--primary) / 0.2);
-    --shadow-secondary: 0 10px 40px hsl(var(--secondary) / 0.2);
-    --shadow-accent: 0 10px 40px hsl(var(--accent) / 0.2);
+    --shadow-glow: 0 0 30px hsl(var(--primary) / 0.15);
+    --shadow-primary: 0 10px 40px hsl(var(--primary) / 0.15);
+    --shadow-secondary: 0 10px 40px hsl(var(--secondary) / 0.15);
+    --shadow-accent: 0 10px 40px hsl(var(--accent) / 0.15);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -68,9 +68,9 @@
   body {
     @apply bg-background text-foreground overflow-x-hidden;
     background-image: 
-      radial-gradient(circle at 20% 50%, hsl(var(--primary) / 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, hsl(var(--secondary) / 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 40% 80%, hsl(var(--accent) / 0.1) 0%, transparent 50%);
+      radial-gradient(circle at 20% 50%, hsl(var(--primary) / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(var(--secondary) / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, hsl(var(--accent) / 0.05) 0%, transparent 50%);
   }
 
   /* Smooth scrolling */
@@ -134,8 +134,8 @@
   }
 
   @keyframes pulse-glow {
-    from { box-shadow: 0 0 20px hsl(var(--primary) / 0.4); }
-    to { box-shadow: 0 0 40px hsl(var(--primary) / 0.8); }
+    from { box-shadow: 0 0 20px hsl(var(--primary) / 0.2); }
+    to { box-shadow: 0 0 40px hsl(var(--primary) / 0.4); }
   }
 
   /* Typing animation */

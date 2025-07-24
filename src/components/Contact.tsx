@@ -11,6 +11,7 @@ import {
   MapPin, 
   Linkedin, 
   Github, 
+  Youtube,
   Send,
   Clock,
   Globe
@@ -71,10 +72,16 @@ const Contact = () => {
       color: 'secondary'
     },
     {
+      icon: Youtube,
+      label: 'YouTube',
+      href: 'https://youtube.com/@gurnoorsingh',
+      color: 'accent'
+    },
+    {
       icon: Globe,
       label: 'Portfolio',
       href: '#',
-      color: 'accent'
+      color: 'primary'
     }
   ];
 

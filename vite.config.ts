@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "127.0.0.1",
     port: 8080,
   },
-  base: process.env.NODE_ENV === 'production' ? '/your-repo-name/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/gurnoor-projects-dynamo/' : '/',
   plugins: [
     react(),
     mode === 'development' &&

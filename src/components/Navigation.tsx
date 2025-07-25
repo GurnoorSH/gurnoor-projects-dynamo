@@ -179,17 +179,6 @@ const Navigation = () => {
         </div>
       </nav>
 
-      {/* Floating Admin Button */}
-      <div className="fixed bottom-6 right-6 z-40">
-        <Button
-          variant="neon"
-          size="icon"
-          className="w-14 h-14 rounded-full shadow-glow hover:scale-110 transition-all duration-300 pulse-glow"
-          onClick={() => {/* TODO: Open admin panel */}}
-        >
-          <Settings className="w-6 h-6" />
-        </Button>
-      </div>
 
       {/* Scroll Progress Indicator */}
       <div className="fixed top-0 left-0 right-0 h-1 bg-background/20 z-50">

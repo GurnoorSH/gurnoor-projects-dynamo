@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 
 const Projects = () => {
-  const [activeFilter, setActiveFilter] = useState('all');
+  const [activeFilter, setActiveFilter] = useState('ai-automation');
 
   const categories = [
     { id: 'all', name: 'All Projects', icon: Filter, count: 12 },

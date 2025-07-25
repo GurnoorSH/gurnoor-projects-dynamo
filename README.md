@@ -1,73 +1,123 @@
-# Welcome to your Lovable project
+# 🚀 Gurnoor Singh - Portfolio Website
 
-## Project info
+Welcome to my personal portfolio website! This is a comprehensive showcase of my journey as a Full Stack Developer, featuring my projects, professional experience, and technical skills.
 
-**URL**: https://lovable.dev/projects/c560899a-d87c-4ec1-ad02-12f222489f67
+## 🌟 Live Demo
 
-## How can I edit this code?
+**🔗 Website**: [https://gurnoorsh.github.io/gurnoor-projects-dynamo/](https://gurnoorsh.github.io/gurnoor-projects-dynamo/)
 
-There are several ways of editing your application.
+## 👨‍💻 About Me
 
-**Use Lovable**
+I'm Gurnoor Singh, a passionate Full Stack Developer and recent Computer Science graduate from Punjab Engineering College. I specialize in building scalable web applications and have experience working with modern technologies like React, Node.js, Python, and machine learning frameworks.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c560899a-d87c-4ec1-ad02-12f222489f67) and start prompting.
+### 🏆 Highlights
+- **Full Stack Developer Intern** at CSIO-CSIR
+- **National Level Roller Hockey Player** - Represented India internationally
+- **Active in College Leadership** - Joint Secretary at EIC, PECFEST Discipline Head
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Technical Skills
 
-**Use your preferred IDE**
+### Programming Languages
+- **Python** - Data Science, Machine Learning, Backend Development
+- **JavaScript/TypeScript** - Frontend & Backend Development
+- **C/C++** - System Programming & Algorithms
+- **SQL** - Database Management & Analytics
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Web Technologies
+- **Frontend**: React, Next.js, HTML5, CSS3, Tailwind CSS
+- **Backend**: Node.js, Express.js, RESTful APIs
+- **Database**: MongoDB, PostgreSQL, MySQL
+- **Cloud & DevOps**: Git, GitHub Actions, Docker
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Data Science & ML
+- **Libraries**: Pandas, NumPy, scikit-learn, XGBoost
+- **Visualization**: Matplotlib, Seaborn, Tableau
+- **AI/NLP**: Rasa, LangChain, SHAP, DistilBERT
 
-Follow these steps:
+## 🎯 Featured Projects
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 💼 Professional Projects
+- **Student Management System (MERN Stack)** - JWT authentication, role-based access, CSV/JSON import-export
+- **AI Legal Research Assistant** - RAG-based system using LangChain and Google Gemini
+- **E-ComAssist Chatbot** - Real-time AI customer support using Rasa and React
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 📊 Data Analytics Projects
+- **Credit Risk Scoring with XGBoost** - Predictive modeling with Tableau dashboard
+- **Zepto E-commerce Analysis** - PostgreSQL database modeling and advanced SQL queries
+- **United Air Calls Metrics Analysis** - ML-powered call center optimization
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 🤖 AI/ML Projects
+- **Stable Diffusion Text-to-Image Pipeline** - End-to-end image generation with optimization
+- **WealthWise Finance Tracker** - Full-stack personal finance management with API integrations
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 📈 What You'll Find Here
+
+This portfolio showcases:
+- **Interactive project demonstrations** with live links and code repositories
+- **Detailed case studies** explaining my problem-solving approach
+- **Technical blog posts** sharing insights and learnings
+- **Professional timeline** with achievements and milestones
+- **Contact information** for collaboration opportunities
+
+## 🚀 Technologies Used
+
+This portfolio website is built with modern web technologies:
+
+- **Vite** - Fast build tool and development server
+- **TypeScript** - Type-safe JavaScript development
+- **React** - Component-based UI library
+- **shadcn/ui** - Modern UI component library
+- **Tailwind CSS** - Utility-first CSS framework
+- **GitHub Pages** - Static site hosting
+
+## 🔧 Local Development
+
+Want to run this project locally? Follow these steps:
+
+```bash
+# Clone the repository
+git clone https://github.com/gurnoorsh/gurnoor-projects-dynamo.git
+
+# Navigate to project directory
+cd gurnoor-projects-dynamo
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
+
+# Build for production
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+## 📞 Get In Touch
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+I'm always open to discussing new opportunities, collaborations, or just having a chat about technology!
 
-**Use GitHub Codespaces**
+- **Email**: [gurnoor1523@gmail.com](mailto:gurnoor1523@gmail.com)
+- **LinkedIn**: [linkedin.com/in/gurnoorsingh09](https://linkedin.com/in/gurnoorsingh09)
+- **Phone**: +91 9780444913
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎨 Design Philosophy
 
-## What technologies are used for this project?
+This portfolio reflects my belief in:
+- **Clean, intuitive user interfaces**
+- **Responsive design for all devices**
+- **Performance optimization**
+- **Accessibility and user experience**
+- **Modern development practices**
 
-This project is built with:
+## 📝 Recent Updates
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- ✅ Deployed to GitHub Pages with CI/CD
+- ✅ Added interactive project showcases
+- ✅ Implemented responsive design
+- ✅ Integrated contact forms
+- ✅ Added blog section for technical articles
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/c560899a-d87c-4ec1-ad02-12f222489f67) and click on Share -> Publish.
+*Built with ❤️ by Gurnoor Singh*
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+<!-- Hidden reference: Originally built with Lovable - https://lovable.dev/projects/c560899a-d87c-4ec1-ad02-12f222489f67 -->

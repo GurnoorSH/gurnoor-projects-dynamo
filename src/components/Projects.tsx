@@ -31,7 +31,7 @@ const Projects = () => {
       description: 'Comprehensive Excel dashboard analyzing sales performance, customer demographics, and inventory management for a retail clothing store with advanced pivot tables and interactive charts.',
       category: 'data-analytics',
       techStack: ['Excel', 'VBA', 'Pivot Tables', 'Data Visualization'],
-      githubUrl: 'https://github.com/gurnoorsingh/clothing-store-dashboard',
+      githubUrl: 'https://github.com/GurnoorSH/Clothing-Store-Data-Analysis',
       youtubeUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop'
     },
@@ -41,7 +41,7 @@ const Projects = () => {
       description: 'Advanced inventory analysis for Zepto using SQL and Excel, optimizing stock levels, identifying demand patterns, and reducing waste through data-driven insights.',
       category: 'data-analytics',
       techStack: ['SQL', 'Excel', 'Power BI', 'Data Analysis'],
-      githubUrl: 'https://github.com/gurnoorsingh/zepto-inventory',
+      githubUrl: 'https://github.com/GurnoorSH/Zepto-Inventory-Analytics',
       youtubeUrl: null,
       image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=250&fit=crop'
     },
@@ -51,7 +51,7 @@ const Projects = () => {
       description: 'Machine learning model for credit risk assessment using historical data, feature engineering, and ensemble methods to predict loan default probability.',
       category: 'data-analytics',
       techStack: ['Python', 'Scikit-learn', 'Pandas', 'XGBoost'],
-      githubUrl: 'https://github.com/gurnoorsingh/credit-risk-model',
+      githubUrl: 'https://github.com/GurnoorSH/Credit-Risk-Scoring',
       youtubeUrl: null,
       image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop'
     },
@@ -61,7 +61,7 @@ const Projects = () => {
       description: 'Call center performance analysis for United Airlines, identifying efficiency bottlenecks, customer satisfaction patterns, and agent performance metrics.',
       category: 'data-analytics',
       techStack: ['Excel', 'Power BI', 'SQL', 'Statistical Analysis'],
-      githubUrl: 'https://github.com/gurnoorsingh/united-air-analysis',
+      githubUrl: 'https://github.com/GurnoorSH/Data-Analysis-and-IVR-Optimization',
       youtubeUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       image: 'https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=400&h=250&fit=crop'
     },
@@ -73,7 +73,7 @@ const Projects = () => {
       description: 'Complete student management system with attendance tracking, grade management, course enrollment, and real-time notifications using the MERN stack.',
       category: 'full-stack',
       techStack: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT'],
-      githubUrl: 'https://github.com/gurnoorsingh/student-management-mern',
+      githubUrl: 'https://github.com/GurnoorSH/sms',
       youtubeUrl: null,
       image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=250&fit=crop'
     },
@@ -83,7 +83,7 @@ const Projects = () => {
       description: 'AI-powered e-commerce chatbot providing product recommendations, order tracking, and customer support with natural language processing capabilities.',
       category: 'full-stack',
       techStack: ['React', 'Node.js', 'OpenAI API', 'MongoDB', 'Socket.io'],
-      githubUrl: 'https://github.com/gurnoorsingh/ecom-assist-chatbot',
+      githubUrl: 'https://github.com/GurnoorSH/Conversational-AI-Platform',
       youtubeUrl: null,
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop'
     },
@@ -93,7 +93,7 @@ const Projects = () => {
       description: 'Personal finance management application with expense tracking, budget planning, investment portfolio monitoring, and financial goal setting.',
       category: 'full-stack',
       techStack: ['React', 'TypeScript', 'Supabase', 'Charts.js', 'Tailwind'],
-      githubUrl: 'https://github.com/gurnoorsingh/wealthwise-tracker',
+      githubUrl: 'https://github.com/GurnoorSH/WealthWise',
       youtubeUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&h=250&fit=crop'
     },
@@ -103,7 +103,7 @@ const Projects = () => {
       description: 'Web application that converts HTML documents to DOCX format while preserving formatting, images, and styling with batch processing capabilities.',
       category: 'full-stack',
       techStack: ['Node.js', 'Express', 'Mammoth.js', 'Multer', 'React'],
-      githubUrl: 'https://github.com/gurnoorsingh/html-docx-converter',
+      githubUrl: 'https://github.com/GurnoorSH/HTML-to-DOCX-Converter',
       youtubeUrl: null,
       image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=250&fit=crop'
     },
@@ -115,7 +115,7 @@ const Projects = () => {
       description: 'Automated image generation pipeline using Stable Diffusion with custom training, prompt optimization, and batch processing for creative workflows.',
       category: 'ai-automation',
       techStack: ['Python', 'Stable Diffusion', 'PyTorch', 'Gradio', 'Docker'],
-      githubUrl: 'https://github.com/gurnoorsingh/stable-diffusion-pipeline',
+      githubUrl: 'https://github.com/GurnoorSH/txt-img',
       youtubeUrl: null,
       image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop'
     },
@@ -125,7 +125,7 @@ const Projects = () => {
       description: 'Intelligent legal research tool using NLP to analyze case documents, extract key insights, and provide relevant precedent recommendations.',
       category: 'ai-automation',
       techStack: ['Python', 'BERT', 'spaCy', 'FastAPI', 'PostgreSQL'],
-      githubUrl: 'https://github.com/gurnoorsingh/legal-ai-assistant',
+      githubUrl: 'https://github.com/GurnoorSH/AI-Legal-Assistant',
       youtubeUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=250&fit=crop'
     },

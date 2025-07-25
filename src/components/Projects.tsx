@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { 
   Github, 
-  ExternalLink, 
+  Youtube, 
   BarChart3, 
   Code, 
   Brain,
@@ -30,7 +30,7 @@ const Projects = () => {
       category: 'data-analytics',
       techStack: ['Excel', 'VBA', 'Pivot Tables', 'Data Visualization'],
       githubUrl: 'https://github.com/gurnoorsingh/clothing-store-dashboard',
-      demoUrl: null,
+      youtubeUrl: 'https://youtube.com/@gurnoorsingh',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop'
     },
     {
@@ -40,7 +40,7 @@ const Projects = () => {
       category: 'data-analytics',
       techStack: ['SQL', 'Excel', 'Power BI', 'Data Analysis'],
       githubUrl: 'https://github.com/gurnoorsingh/zepto-inventory',
-      demoUrl: null,
+      youtubeUrl: 'https://youtube.com/@gurnoorsingh',
       image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=250&fit=crop'
     },
     {
@@ -50,7 +50,7 @@ const Projects = () => {
       category: 'data-analytics',
       techStack: ['Python', 'Scikit-learn', 'Pandas', 'XGBoost'],
       githubUrl: 'https://github.com/gurnoorsingh/credit-risk-model',
-      demoUrl: null,
+      youtubeUrl: 'https://youtube.com/@gurnoorsingh',
       image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop'
     },
     {
@@ -60,7 +60,7 @@ const Projects = () => {
       category: 'data-analytics',
       techStack: ['Excel', 'Power BI', 'SQL', 'Statistical Analysis'],
       githubUrl: 'https://github.com/gurnoorsingh/united-air-analysis',
-      demoUrl: null,
+      youtubeUrl: 'https://youtube.com/@gurnoorsingh',
       image: 'https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=400&h=250&fit=crop'
     },
 
@@ -72,7 +72,7 @@ const Projects = () => {
       category: 'full-stack',
       techStack: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT'],
       githubUrl: 'https://github.com/gurnoorsingh/student-management-mern',
-      demoUrl: 'https://student-mgmt-demo.vercel.app',
+      youtubeUrl: 'https://youtube.com/@gurnoorsingh',
       image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=250&fit=crop'
     },
     {
@@ -82,7 +82,7 @@ const Projects = () => {
       category: 'full-stack',
       techStack: ['React', 'Node.js', 'OpenAI API', 'MongoDB', 'Socket.io'],
       githubUrl: 'https://github.com/gurnoorsingh/ecom-assist-chatbot',
-      demoUrl: 'https://ecom-assist-demo.vercel.app',
+      youtubeUrl: 'https://youtube.com/@gurnoorsingh',
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop'
     },
     {
@@ -92,7 +92,7 @@ const Projects = () => {
       category: 'full-stack',
       techStack: ['React', 'TypeScript', 'Supabase', 'Charts.js', 'Tailwind'],
       githubUrl: 'https://github.com/gurnoorsingh/wealthwise-tracker',
-      demoUrl: 'https://wealthwise-demo.vercel.app',
+      youtubeUrl: 'https://youtube.com/@gurnoorsingh',
       image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&h=250&fit=crop'
     },
     {
@@ -102,7 +102,7 @@ const Projects = () => {
       category: 'full-stack',
       techStack: ['Node.js', 'Express', 'Mammoth.js', 'Multer', 'React'],
       githubUrl: 'https://github.com/gurnoorsingh/html-docx-converter',
-      demoUrl: 'https://html-converter-demo.vercel.app',
+      youtubeUrl: 'https://youtube.com/@gurnoorsingh',
       image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=250&fit=crop'
     },
 
@@ -114,7 +114,7 @@ const Projects = () => {
       category: 'ai-automation',
       techStack: ['Python', 'Stable Diffusion', 'PyTorch', 'Gradio', 'Docker'],
       githubUrl: 'https://github.com/gurnoorsingh/stable-diffusion-pipeline',
-      demoUrl: null,
+      youtubeUrl: 'https://youtube.com/@gurnoorsingh',
       image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop'
     },
     {
@@ -124,7 +124,7 @@ const Projects = () => {
       category: 'ai-automation',
       techStack: ['Python', 'BERT', 'spaCy', 'FastAPI', 'PostgreSQL'],
       githubUrl: 'https://github.com/gurnoorsingh/legal-ai-assistant',
-      demoUrl: null,
+      youtubeUrl: 'https://youtube.com/@gurnoorsingh',
       image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=250&fit=crop'
     },
     {
@@ -134,8 +134,8 @@ const Projects = () => {
       category: 'ai-automation',
       techStack: ['Python', 'Tesseract', 'OpenCV', 'NLTK', 'FastAPI'],
       githubUrl: 'https://github.com/gurnoorsingh/smart-doc-processor',
-      demoUrl: null,
-      image: 'https://images.unsplash.com/photo-1554224154-26032fced8bd?w=400&h=250&fit=crop'
+      youtubeUrl: 'https://youtube.com/@gurnoorsingh',
+      image: 'https://images.unsplash.com/photo-1473091534298-04dcbce3278c?w=400&h=250&fit=crop'
     },
     {
       id: 12,
@@ -144,7 +144,7 @@ const Projects = () => {
       category: 'ai-automation',
       techStack: ['Python', 'Pandas', 'Scikit-learn', 'Alpaca API', 'TensorFlow'],
       githubUrl: 'https://github.com/gurnoorsingh/trading-bot',
-      demoUrl: null,
+      youtubeUrl: 'https://youtube.com/@gurnoorsingh',
       image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=250&fit=crop'
     }
   ];
@@ -264,17 +264,15 @@ const Projects = () => {
                     <Github className="w-4 h-4 mr-2" />
                     Code
                   </Button>
-                  {project.demoUrl && (
-                    <Button 
-                      variant="neon" 
-                      size="sm" 
-                      className="flex-1"
-                      onClick={() => window.open(project.demoUrl, '_blank')}
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Demo
-                    </Button>
-                  )}
+                  <Button 
+                    variant="neon" 
+                    size="sm" 
+                    className="flex-1"
+                    onClick={() => window.open(project.youtubeUrl, '_blank')}
+                  >
+                    <Youtube className="w-4 h-4 mr-2" />
+                    Watch
+                  </Button>
                 </div>
               </div>
             </Card>

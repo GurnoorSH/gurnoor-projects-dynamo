@@ -155,9 +155,9 @@ const Contact = () => {
     e.preventDefault();
     
     // Check if EmailJS is configured
-    if (EMAILJS_SERVICE_ID === 'service_99ns43j' || 
-        EMAILJS_TEMPLATE_ID === 'template_va5dyro' || 
-        EMAILJS_PUBLIC_KEY === 'o4dUw0nI5j4n9-smm') {
+    if (EMAILJS_SERVICE_ID === 'YOUR_SERVICE_ID' || 
+        EMAILJS_TEMPLATE_ID === 'YOUR_TEMPLATE_ID' || 
+        EMAILJS_PUBLIC_KEY === 'YOUR_PUBLIC_KEY') {
       toast({
         title: 'Configuration Required',
         description: 'Please configure your EmailJS credentials first.',

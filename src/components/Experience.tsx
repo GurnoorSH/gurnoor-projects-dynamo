@@ -9,7 +9,7 @@ const Experience = () => {
       position: "Full Stack Developer Intern",
       company: "CSIO-CSIR (Council of Scientific & Industrial Research)",
       location: "Chandigarh, India",
-      duration: "June 2024 - Present",
+      duration: "Jan 2024 - May 2024",
       type: "Internship",
       description:
         "Working on cutting-edge research projects involving full-stack web development, data analysis, and automation solutions for scientific applications.",
@@ -34,7 +34,7 @@ const Experience = () => {
       position: "Student Researcher - Machine Learning",
       company: "Punjab Engineering College",
       location: "Chandigarh, India",
-      duration: "January 2024 - May 2024",
+      duration: "May 2024 - December 2024",
       type: "Academic",
       description:
         "Developed an innovative predictive model for Indian Sign Language (ISL) recognition to enhance accessibility for deaf and hard-of-hearing students. Created a dual-function system that converts text/images to sign language interpretations and translates sign language gestures back to English text.",
@@ -62,7 +62,7 @@ const Experience = () => {
       position: "Web Development Freelancer",
       company: "Independent Contractor",
       location: "Remote",
-      duration: "September 2023 - December 2023",
+      duration: "September 2023 - Present",
       type: "Freelance",
       description:
         "Provided web development services to local businesses and startups, creating custom websites and web applications.",

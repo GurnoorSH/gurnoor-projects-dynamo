@@ -116,7 +116,7 @@ const Hero = () => {
                 variant="glass" 
                 size="icon" 
                 className="hover-lift"
-                onClick={() => window.open('https://github.com/gurnoorsingh', '_blank')}
+                onClick={() => window.open('https://github.com/GurnoorSH?tab=repositories', '_blank')}
               >
                 <Github className="w-5 h-5" />
               </Button>

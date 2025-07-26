@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -14,7 +15,9 @@ import {
   Youtube,
   Send,
   Clock,
-  Globe
+  Globe,
+  CheckCircle,
+  AlertCircle
 } from 'lucide-react';
 
 const Contact = () => {
@@ -26,6 +29,11 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+
+  // TODO: Replace these with your actual EmailJS credentials
+  const EMAILJS_SERVICE_ID = 'service_99ns43j';  // e.g., 'service_abc123'
+  const EMAILJS_TEMPLATE_ID = 'template_va5dyro'; // e.g., 'template_xyz789'
+  const EMAILJS_PUBLIC_KEY = 'o4dUw0nI5j4n9-smm';   // e.g., 'abcdefghijklmnop'
 
   const contactInfo = [
     {
@@ -92,19 +100,131 @@ const Contact = () => {
     });
   };
 
+  const validateForm = () => {
+    if (!formData.name.trim()) {
+      toast({
+        title: 'Name Required',
+        description: 'Please enter your name.',
+        variant: 'destructive'
+      });
+      return false;
+    }
+
+    if (!formData.email.trim()) {
+      toast({
+        title: 'Email Required',
+        description: 'Please enter your email address.',
+        variant: 'destructive'
+      });
+      return false;
+    }
+
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast({
+        title: 'Invalid Email',
+        description: 'Please enter a valid email address.',
+        variant: 'destructive'
+      });
+      return false;
+    }
+
+    if (!formData.subject.trim()) {
+      toast({
+        title: 'Subject Required',
+        description: 'Please enter a subject.',
+        variant: 'destructive'
+      });
+      return false;
+    }
+
+    if (!formData.message.trim()) {
+      toast({
+        title: 'Message Required',
+        description: 'Please enter your message.',
+        variant: 'destructive'
+      });
+      return false;
+    }
+
+    return true;
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Check if EmailJS is configured
+    if (EMAILJS_SERVICE_ID === 'service_99ns43j' || 
+        EMAILJS_TEMPLATE_ID === 'template_va5dyro' || 
+        EMAILJS_PUBLIC_KEY === 'o4dUw0nI5j4n9-smm') {
+      toast({
+        title: 'Configuration Required',
+        description: 'Please configure your EmailJS credentials first.',
+        variant: 'destructive'
+      });
+      console.error('EmailJS not configured. Please update the credentials in the component.');
+      return;
+    }
+
+    // Validate form
+    if (!validateForm()) {
+      return;
+    }
+
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // Initialize EmailJS with your public key
+      emailjs.init(EMAILJS_PUBLIC_KEY);
+
+      // Prepare template parameters
+      const templateParams = {
+        from_name: formData.name.trim(),
+        from_email: formData.email.trim(),
+        subject: formData.subject.trim(),
+        message: formData.message.trim(),
+        to_email: 'gurnoor1523@gmail.com', // Your email
+        reply_to: formData.email.trim()
+      };
+
+      console.log('Sending email with params:', templateParams);
+
+      // Send email using EmailJS
+      const response = await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams
+      );
+
+      console.log('EmailJS Response:', response);
+
+      // Success notification
       toast({
-        title: 'Message Sent!',
-        description: 'Thank you for reaching out. I\'ll get back to you soon!',
+        title: 'Message Sent Successfully! ✅',
+        description: 'Thank you for reaching out. I\'ll get back to you within 24 hours!',
       });
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      
+      // Reset form
+      setFormData({ 
+        name: '', 
+        email: '', 
+        subject: '', 
+        message: '' 
+      });
+
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      
+      // Error notification
+      toast({
+        title: 'Failed to Send Message ❌',
+        description: 'Something went wrong. Please try again or contact me directly via email.',
+        variant: 'destructive'
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const getColorClasses = (color: string) => {
@@ -201,7 +321,7 @@ const Contact = () => {
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-accent">10+</div>
-                  <div className="text-sm text-muted-foreground">Technologies</div>
+                  <div className="text-sm text-muted-foregoing">Technologies</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-primary">100%</div>
@@ -227,6 +347,7 @@ const Contact = () => {
                     required
                     className="glass"
                     placeholder="Your full name"
+                    disabled={isSubmitting}
                   />
                 </div>
                 
@@ -241,6 +362,7 @@ const Contact = () => {
                     required
                     className="glass"
                     placeholder="your.email@example.com"
+                    disabled={isSubmitting}
                   />
                 </div>
               </div>
@@ -255,6 +377,7 @@ const Contact = () => {
                   required
                   className="glass"
                   placeholder="What's this about?"
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -268,6 +391,7 @@ const Contact = () => {
                   required
                   className="glass min-h-[120px]"
                   placeholder="Tell me about your project or opportunity..."
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -281,7 +405,7 @@ const Contact = () => {
                 {isSubmitting ? (
                   <>
                     <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2" />
-                    Sending...
+                    Sending Message...
                   </>
                 ) : (
                   <>

@@ -67,7 +67,7 @@ const Experience = () => {
       description:
         "Provided web development services to local businesses and startups, creating custom websites and web applications.",
       achievements: [
-        "Delivered 5+ successful web development projects",
+        "Delivered 3+ successful web development projects",
         "Achieved 100% client satisfaction rate",
         "Implemented e-commerce solutions for small businesses",
         "Created responsive designs for mobile-first approach",
@@ -78,12 +78,12 @@ const Experience = () => {
     {
       id: 4,
       position: "Hockey Team Captain",
-      company: "District Sports Committee",
-      location: "Punjab, India",
+      company: "NAtional Sports Committee",
+      location: "Chandigarh, India",
       duration: "2022 - 2023",
       type: "Sports Leadership",
       description:
-        "Led the district hockey team in regional competitions, demonstrating leadership skills and team coordination.",
+        "Led the National hockey team in international,national and state competitions, demonstrating leadership skills and team coordination.",
       achievements: [
         "Captained team to regional championship semifinals",
         "Organized training sessions and strategy meetings",
